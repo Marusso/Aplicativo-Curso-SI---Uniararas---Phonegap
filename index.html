@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <title>SI - FHO Uniararas</title>
+</head>
+
+<body>   
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> 
+   
+    <script type="text/javascript">
+        app.initialize();
+
+    function escondePaginas(){
+        $("#tela_inicial").hide();
+        $("#sobre-curso").hide();        
+    }
+
+    function exibePagina(idpagina){
+       escondePaginas();
+       $("#"+idpagina).fadeIn("slow");
+    }
+    
+
+    </script>
+    <!-- Tela Inicial -->
+    <div class="container" id="tela_inicial">
+        <div class="row">
+            <div class="curso">
+                <div class="curso-titulo">
+                    <div class="col-xs-24">
+                        <h4>Sistemas de Informação - FHO Uniararas</h4>
+                    </div>
+                </div>
+                <div class="curso-conteudo">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            <a onclick="exibePagina('sobre-curso');"><img class="img-responsive" src="img/sobre.png">
+                            <span>Sobre o curso</span></a>
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="img/mensalidade.png"> 
+                            <span>Mensalidade</span>
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="img/grade-curricular.png">
+                            <span>Grade Curricular</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="img/profissao.png">
+                            <span>A Profissão</span>
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="img/grade-curricular.png">
+                            <span>Informações Adicionais</span>
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="img/grade-curricular.png">
+                            <span>Contato</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Tela Inicial -->
+
+    <!-- Tela Sobre o Curso de SI -->
+    <div class="container" id="sobre-curso" style="display: none;">
+        <div class="row">
+            <div class="conteudo">
+                <div class="col-xs-24">
+                   <div class="curso-titulo">
+                        <div class="col-xs-24">
+                            <h4>Sobre o Curso</h4>
+                        </div>
+                   </div>
+                   <div class="conteudo-sobre">
+                       <div class="col-xs-24">
+                            <p>O curso de Sistemas de Informação da FHO|Uniararas é fundamentado em três pilares: Desenvolvimento de Sistemas (Programação/Análise), Banco de Dados (Armazenamento) e Sistemas Operacionais e Redes de Computadores. O corpo docente, formado por profissionais qualificados e com grande experiência profissional, constitui um importante fator para que o objetivo do curso seja alcançado: formar profissionais criativos, inovadores, competentes e preparados para atuar no projeto, planejamento e implantação de soluções baseadas no uso da Tecnologia da Informação.</p>
+                            <p>Além das salas de aula adequadas ao uso de notebooks, com acesso wireless à Internet, merece destaque a estrutura oferecida aos alunos para as aulas práticas e pesquisas, composta por oito laboratórios equipados e atualizados com as últimas tecnologias.</p>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Tela  Sobre o Curso SI -->
+
+
+
+
+</body>
+
+</html>
